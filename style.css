@@ -1,0 +1,223 @@
+body {
+  background-color: #000000;
+  color: aliceblue;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Rye", cursive;
+  font-weight: 900;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+}
+
+h1:hover {
+  color: #333999;
+}
+
+p {
+  font-family: "Arizonia", cursive;
+  font-weight: 500;
+  padding-bottom: 4rem;
+  color: white;
+  font-size: 18px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+h3 {
+  text-align: left;
+  font-size: 2rem;
+}
+li {
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Arizonia", cursive;
+  
+}
+
+.capitulo1 {
+  width: 500px;
+  height: 500px;
+}
+
+.capitulo2 {
+  width: 500px;
+  height: 500px;
+}
+
+.capitulo3 {
+  width: 500px;
+  height: 500px;
+}
+
+.ending {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.capi {
+  text-align: center;
+}
+
+.capi2 {
+  text-align: center;
+}
+
+.capi3 {
+  text-align: center;
+}
+
+.capi4 {
+  text-align: center;
+}
+.capi5 {
+  text-align: center;
+}
+.capi6 {
+  text-align: center;
+}
+
+.capi7 {
+  text-align: center;
+}
+.capi8 {
+  text-align: center;
+}
+
+.capi9 {
+  text-align: center;
+}
+.capi10 {
+  text-align: center;
+}
+
+.capi11 {
+  text-align: center;
+}
+
+.capi12 {
+  text-align: center;
+}
+
+.capi13 {
+  text-align: center;
+}
+
+.capi14 {
+  text-align: center;
+}
+
+.capi15 {
+  text-align: center;
+}
+.capi16 {
+  text-align: center;
+}
+.capi17 {
+  text-align: center;
+}
+.capi18 {
+  text-align: center;
+}
+.capi19 {
+  text-align: center;
+}
+.capi20 {
+  text-align: center;
+}
+.capi21 {
+  text-align: center;
+}
+.capi22 {
+  text-align: center;
+}
+.capi23 {
+  text-align: center;
+}
+.capi24 {
+  text-align: center;
+}
+.capi25 {
+  text-align: center;
+}
+.capi26 {
+  text-align: center;
+}
+.capi27 {
+  text-align: center;
+}
+.capi28 {
+  text-align: center;
+}
+.capi29 {
+  text-align: center;
+}
+
+.capi30 {
+  text-align: center;
+}
+.capi31 {
+  text-align: center;
+}
+.capi32 {
+  text-align: center;
+}
+
+.contenedor {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .ending {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+footer{
+
+  font-family: "Arizonia", cursive;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  font-size: 12px;
+
+}
+
+
+
+
+.love{
+
+  background-color: aqua;
+}
+
+.amores{
+
+padding-bottom: 4rem;
+
+}
+
+.reparto{
+
+padding-bottom: 4rem;
+
+}
+
+.Leo{
+
+font-size: 2rem;
+padding-top: 3rem;
+
+}
