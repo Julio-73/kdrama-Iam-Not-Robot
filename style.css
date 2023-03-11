@@ -22,6 +22,7 @@ p {
   padding-bottom: 4rem;
   color: white;
   font-size: 18px;
+ text-justify: distribute;
 }
 
 h2 {
@@ -41,6 +42,36 @@ li {
   font-family: "Arizonia", cursive;
   
 }
+
+/*Efecto de movimiento imagen Keyframes */
+
+
+img{
+
+  animation: floatImage 4s ease-in-out infinite ;
+}
+
+@keyframes floatImage {
+
+  0%{
+
+    transform: translateX(0);
+  }
+
+  50%{
+
+    transform: translateX(-10px);
+  }
+
+  100%{
+
+    transform: translateX(0);
+  }
+}
+
+
+
+
 
 .capitulo1 {
   width: 500px;
