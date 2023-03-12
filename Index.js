@@ -27,4 +27,4 @@ ScrollReveal().reveal('.reparto li', { origin: 'right'});
 ScrollReveal().reveal(' h2', { origin: 'bottom'});
 
 
-ScrollReveal().reveal(' .ending', { origin: 'top'});
+ScrollReveal().reveal(' h3', { origin: 'left'});

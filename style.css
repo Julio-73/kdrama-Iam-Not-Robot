@@ -10,11 +10,25 @@ h1 {
   padding-top: 1rem;
   padding-bottom: 2rem;
   font-size: 3rem;
+  color: #333999;
 }
 
 h1:hover {
-  color: #333999;
+  color: #5258c2;
+
+  }
+
+  video{
+    width: 50vw;
+  }
+
+.contenedor p{
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
+
 
 p {
   font-family: "Arizonia", cursive;
@@ -22,7 +36,9 @@ p {
   padding-bottom: 4rem;
   color: white;
   font-size: 18px;
- text-justify: distribute;
+
+
+text-align: justify;
 }
 
 h2 {
@@ -49,23 +65,24 @@ li {
 img{
 
   animation: floatImage 4s ease-in-out infinite ;
+  width: 50vw;
 }
 
 @keyframes floatImage {
 
   0%{
 
-    transform: translateX(0);
+    transform: translateY(+5px);
   }
 
   50%{
 
-    transform: translateX(-10px);
+    transform: translateX(-5px);
   }
 
   100%{
 
-    transform: translateX(0);
+    transform: translateY(+5px);
   }
 }
 
@@ -209,6 +226,11 @@ img{
   .ending {
     display: block;
   }
+
+  iframe{
+    width: 50vw;
+  }
+
 }
 
 
