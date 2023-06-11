@@ -15,20 +15,17 @@ h1 {
 
 h1:hover {
   color: #5258c2;
-
-  }
-
-  video{
-    width: 50vw;
-  }
-
-.contenedor p{
-display: flex;
-justify-content: center;
-align-items: center;
-
 }
 
+video {
+  width: 50vw;
+}
+
+.contenedor p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 p {
   font-family: "Arizonia", cursive;
@@ -37,8 +34,7 @@ p {
   color: white;
   font-size: 18px;
 
-
-text-align: justify;
+  text-align: justify;
 }
 
 h2 {
@@ -56,39 +52,28 @@ li {
   font-weight: 500;
   font-size: 18px;
   font-family: "Arizonia", cursive;
-  
 }
 
 /*Efecto de movimiento imagen Keyframes */
 
-
-img{
-
-  animation: floatImage 4s ease-in-out infinite ;
+img {
+  animation: floatImage 4s ease-in-out infinite;
   width: 50vw;
 }
 
 @keyframes floatImage {
-
-  0%{
-
+  0% {
     transform: translateY(+5px);
   }
 
-  50%{
-
+  50% {
     transform: translateX(-5px);
   }
 
-  100%{
-
+  100% {
     transform: translateY(+5px);
   }
 }
-
-
-
-
 
 .capitulo1 {
   width: 500px;
@@ -227,50 +212,31 @@ img{
     display: block;
   }
 
-  iframe{
+  iframe {
     width: 50vw;
   }
-
 }
 
-
-
-
-
-
-
-footer{
-
+footer {
   font-family: "Arizonia", cursive;
   padding-top: 4rem;
   padding-bottom: 1rem;
   font-size: 12px;
-
 }
 
-
-
-
-.love{
-
+.love {
   background-color: aqua;
 }
 
-.amores{
-
-padding-bottom: 4rem;
-
+.amores {
+  padding-bottom: 4rem;
 }
 
-.reparto{
-
-padding-bottom: 4rem;
-
+.reparto {
+  padding-bottom: 4rem;
 }
 
-.Leo{
-
-font-size: 2rem;
-padding-top: 3rem;
-
+.Leo {
+  font-size: 2rem;
+  padding-top: 3rem;
 }
