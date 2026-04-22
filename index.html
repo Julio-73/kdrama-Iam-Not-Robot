@@ -45,6 +45,7 @@
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
 
+    /* NAVBAR */
     .navbar {
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
       padding: 0 4%; height: 68px;
@@ -60,6 +61,7 @@
     .nav-logo {
       font-family: 'Bebas Neue', sans-serif; font-size: 28px;
       letter-spacing: 2px; color: var(--red); text-decoration: none;
+      white-space: nowrap;
     }
     .nav-logo span { color: var(--white); font-weight: 300; font-size: 18px; margin-left: 6px; font-family: 'Noto Sans'; }
     .nav-links { display: flex; gap: 24px; list-style: none; }
@@ -89,6 +91,7 @@
     }
     .nav-toggle { display: none; }
 
+    /* HERO */
     .hero {
       position: relative; width: 100%; height: 90vh; min-height: 600px;
       max-height: 900px; overflow: hidden;
@@ -179,6 +182,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    /* BOTONES */
     .btn {
       display: inline-flex; align-items: center; gap: 10px;
       padding: 14px 28px; border-radius: var(--r); font-size: 14px;
@@ -201,6 +205,7 @@
     .btn-info:hover { background: rgba(109,109,110,0.6); border-color: rgba(255,255,255,0.3); }
     .btn i { font-size: 16px; }
 
+    /* TRAILER */
     .trailer-section {
       position: relative; z-index: 10;
       margin-top: -80px; padding: 0 4%; margin-bottom: 60px;
@@ -233,6 +238,7 @@
     .trailer-fb-icon:hover { background: rgba(229,9,20,0.4); transform: scale(1.1); }
     .trailer-fb-text { font-size: 14px; color: var(--gray2); }
 
+    /* SECCIONES */
     .section { padding: 20px 4% 50px; position: relative; }
     .section-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 24px; }
     .section-title { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 2px; }
@@ -242,6 +248,7 @@
     .anim-in { transform: translateY(40px); transition: transform 0.7s ease; }
     .anim-in.shown { transform: translateY(0); }
 
+    /* IMAGENES ESCENA */
     .scene-section { padding: 0 4% 50px; }
     .scene-wrap {
       max-width: 900px; margin: 0 auto; border-radius: var(--rl);
@@ -252,6 +259,7 @@
     .scene-wrap:hover img { transform: scale(1.03); }
     .scene-wrap::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.4) 0%, transparent 40%); pointer-events: none; }
 
+    /* REPARTO */
     .cast-scroll {
       display: flex; gap: 16px; overflow-x: auto; padding-bottom: 16px;
       scroll-snap-type: x mandatory; -ms-overflow-style: none; scrollbar-width: none;
@@ -272,6 +280,7 @@
     .cast-card:hover .cast-name { color: var(--red); }
     .cast-role { font-size: 12px; color: var(--gray2); }
 
+    /* INFO */
     .info-panel { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 40px 4%; }
     .info-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
     .info-block h3 { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 2px; margin-bottom: 16px; }
@@ -280,6 +289,7 @@
     .info-label { font-size: 12px; color: var(--gray2); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
     .info-value { font-size: 14px; color: var(--gray1); }
 
+    /* EPISODIOS */
     .ep-filter { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
     .fbtn {
       background: rgba(255,255,255,0.06); border: 1px solid var(--border);
@@ -312,12 +322,10 @@
     .ep-sub { font-size: 12px; color: var(--gray2); }
     .ep-st { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 2px 8px; border-radius: 3px; flex-shrink: 0; background: rgba(70,211,105,0.15); color: var(--green); }
 
-    /* ===== MODAL - z-index alto, iframe sin restricciones ===== */
+    /* MODAL */
     .modal-bg {
-      position: fixed; inset: 0;
-      background: rgba(0,0,0,0.97);
-      z-index: 50000;
-      display: flex; align-items: center; justify-content: center;
+      position: fixed; inset: 0; background: rgba(0,0,0,0.97);
+      z-index: 50000; display: flex; align-items: center; justify-content: center;
       opacity: 0; pointer-events: none; transition: opacity 0.3s;
     }
     .modal-bg.active { opacity: 1; pointer-events: all; }
@@ -337,11 +345,7 @@
       border-radius: var(--rl); overflow: hidden; background: #000;
       box-shadow: 0 0 80px rgba(0,0,0,0.9), 0 0 40px var(--red-glow);
     }
-    /* IFRAME: sin pointer-events bloqueando, allow completo */
-    .modal-iframe-box iframe {
-      width: 100%; height: 100%; border: none;
-      position: relative; z-index: 1;
-    }
+    .modal-iframe-box iframe { width: 100%; height: 100%; border: none; position: relative; z-index: 1; }
     .modal-nav { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; }
     .mnav-btn {
       display: inline-flex; align-items: center; gap: 8px;
@@ -353,6 +357,7 @@
     .mnav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
     .mnav-btn:disabled:hover { background: rgba(255,255,255,0.08); color: var(--gray1); }
 
+    /* TOAST */
     .toast-box { position: fixed; bottom: 24px; right: 24px; z-index: 99999; display: flex; flex-direction: column; gap: 8px; }
     .toast {
       background: #1e1e1e; border: 1px solid var(--border); border-left: 3px solid var(--red);
@@ -365,6 +370,7 @@
     @keyframes toastIn { from { transform: translateX(120%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
     @keyframes toastOut { from { transform: translateX(0); opacity: 1; } to { transform: translateX(120%); opacity: 0; } }
 
+    /* FOOTER */
     .footer { padding: 40px 4%; border-top: 1px solid var(--border); text-align: center; }
     .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--red); letter-spacing: 2px; margin-bottom: 12px; }
     .footer-text { font-size: 12px; color: var(--gray2); line-height: 1.8; }
@@ -373,6 +379,7 @@
     .footer-socials a { color: var(--gray2); font-size: 16px; transition: color var(--t); text-decoration: none; }
     .footer-socials a:hover { color: var(--red); }
 
+    /* MOBILE MENU */
     .mob-menu {
       position: fixed; top: 0; left: 0; bottom: 0; width: 280px;
       background: rgba(10,10,10,0.98); backdrop-filter: blur(20px);
@@ -386,22 +393,176 @@
     .mob-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 59999; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
     .mob-overlay.open { opacity: 1; pointer-events: all; }
 
+    /* ============================================= */
+    /* RESPONSIVE - CORREGIDO PARA MOVIL             */
+    /* ============================================= */
     @media (max-width: 900px) {
       .info-grid { grid-template-columns: 1fr; gap: 32px; }
       .ep-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
     }
+
     @media (max-width: 768px) {
-      .nav-links { display: none; } .nav-toggle { display: block; }
-      .hero { height: 80vh; min-height: 500px; } .hero-title { font-size: 46px; } .hero-desc { font-size: 13px; }
-      .trailer-section { margin-top: -50px; }
-      .cast-card { flex: 0 0 140px; } .cast-img-wrap { width: 110px; height: 110px; }
-      .ep-grid { grid-template-columns: 1fr; } .section { padding: 16px 4% 36px; }
-      .modal-box { width: 98%; }
+      /* NAVBAR: ocultar links, mostrar hamburger */
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+
+      /* HERO: mas corto para no chocar con trailer */
+      .hero {
+        height: auto;
+        min-height: 100vh;
+        max-height: none;
+        padding-bottom: 160px;
+      }
+
+      .hero-content {
+        padding-top: 100px;
+        justify-content: flex-start;
+      }
+
+      .hero-title { font-size: 46px; }
+      .hero-desc { font-size: 13px; margin-bottom: 24px; }
+      .hero-subtitle { font-size: 15px; letter-spacing: 2px; margin-bottom: 14px; }
+      .hero-genres { margin-bottom: 18px; }
+      .hero-meta { margin-bottom: 14px; gap: 10px; }
+      .hero-meta-item { font-size: 12px; }
+      .hero-badge { margin-bottom: 14px; font-size: 10px; padding: 4px 10px; }
+
+      /* TRAILER: sin margen negativo, se pone debajo del hero */
+      .trailer-section {
+        margin-top: -140px;
+        margin-bottom: 50px;
+      }
+
+      .cast-card { flex: 0 0 140px; }
+      .cast-img-wrap { width: 110px; height: 110px; }
+      .ep-grid { grid-template-columns: 1fr; }
+      .section { padding: 16px 4% 36px; }
     }
+
     @media (max-width: 480px) {
-      .hero-actions { flex-direction: column; } .btn { justify-content: center; width: 100%; }
-      .nav-right .nav-btn:not(.nav-toggle) { display: none; }
+      /* LOGO: mas chico para que no se superponga */
+      .nav-logo {
+        font-size: 22px;
+        letter-spacing: 1px;
+      }
+      .nav-logo span {
+        font-size: 14px;
+        margin-left: 4px;
+      }
+
+      /* NAVBAR mas compacta */
+      .navbar {
+        height: 56px;
+        padding: 0 4%;
+      }
+
+      .nav-avatar {
+        width: 28px; height: 28px;
+        font-size: 9px;
+      }
+
+      /* HERO: ajustar contenido */
+      .hero {
+        min-height: 100vh;
+        padding-bottom: 140px;
+      }
+
+      .hero-content {
+        padding-top: 80px;
+      }
+
+      .hero-title {
+        font-size: 38px;
+        letter-spacing: 2px;
+      }
+
+      .hero-subtitle {
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+
+      .hero-desc {
+        font-size: 12px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+
+      .hero-badge {
+        font-size: 9px;
+        padding: 4px 8px;
+        margin-bottom: 12px;
+      }
+
+      .hero-genres { margin-bottom: 14px; }
+
+      .genre-tag {
+        font-size: 10px;
+        padding: 3px 10px;
+      }
+
+      /* BOTONES: en fila horizontal, no columna */
+      .hero-actions {
+        flex-direction: row;
+        gap: 8px;
+      }
+
+      .btn {
+        padding: 12px 16px;
+        font-size: 12px;
+        flex: 1;
+        justify-content: center;
+        letter-spacing: 0.3px;
+      }
+
+      .btn i { font-size: 14px; }
+
+      /* TRAILER: sin margen negativo en pantallas chiquitas */
+      .trailer-section {
+        margin-top: -120px;
+        margin-bottom: 40px;
+        padding: 0 3%;
+      }
+
+      .trailer-label {
+        top: 10px; left: 10px;
+        font-size: 9px;
+        padding: 3px 8px;
+      }
+
+      /* Secciones */
+      .section { padding: 12px 3% 30px; }
+      .section-title { font-size: 22px; }
+
+      .scene-section { padding: 0 3% 30px; }
+
+      .ep-filter { gap: 6px; margin-bottom: 16px; }
+      .fbtn { padding: 6px 14px; font-size: 12px; }
+
+      /* Info */
+      .info-panel { padding: 30px 4%; }
+      .info-block h3 { font-size: 18px; }
+      .info-block p { font-size: 13px; line-height: 1.8; }
+
+      /* Modal */
+      .modal-box { width: 98%; }
+      .modal-title { font-size: 18px; }
       .mnav-btn .blbl { display: none; }
+      .mnav-btn { padding: 8px 14px; font-size: 12px; }
+      .modal-nav { margin-top: 10px; }
+
+      /* Footer */
+      .footer { padding: 30px 4%; }
+      .footer-logo { font-size: 18px; }
+    }
+
+    /* Pantallas muy chiquitas (< 360px) */
+    @media (max-width: 360px) {
+      .nav-logo { font-size: 20px; }
+      .nav-logo span { font-size: 12px; }
+      .hero-title { font-size: 34px; }
+      .btn { padding: 10px 12px; font-size: 11px; }
+      .hero { padding-bottom: 120px; }
+      .trailer-section { margin-top: -100px; }
     }
   </style>
 </head>
@@ -511,7 +672,7 @@
     <div class="info-grid">
       <div class="info-block">
         <h3>Sinopsis Completa</h3>
-        <p>Kim Min-kyu (Yoo Seung-ho) vive una vida aislada debido a una alergia severa a otras personas. Jo Ji-ah (Chae Soo-bin) es una mujer que está tratando de triunfar creando sus propios negocios. Sin embargo, después de un encuentro con Min-kyu, termina fingiendo ser un robot en lugar del supuesto robot AG3. El robot AG3 fue desarrollado por el exnovio de Ji-ah, el profesor Hong Baek-kyun (Um Ki-joon) y su equipo. El robot fue diseñado para ser probado por el genio Min-kyu, sin embargo, un accidente causó un mal funcionamiento de la batería del robot. Cuando Baek-kyun modeló al robot después de Ji-ah, el equipo termina recluyéndola para tomar el lugar de AG3.</p>
+        <p>Kim Min-kyu (Yoo Seung-ho) vive una vida aislada debido a una alergia severa a otras personas. Él desarrolla erupciones extremas que se extienden rápidamente por todo su cuerpo una vez que hace cualquier tipo de contacto con la piel. Jo Ji-ah (Chae Soo-bin) es una mujer que está tratando de triunfar creando sus propios negocios. Sin embargo, después de un encuentro con Min-kyu, termina fingiendo ser un robot en lugar del supuesto robot AG3. El robot AG3 fue desarrollado por el exnovio de Ji-ah, el profesor Hong Baek-kyun (Um Ki-joon) y su equipo. El robot fue diseñado para ser probado por el genio Min-kyu, sin embargo, un accidente causó un mal funcionamiento de la batería del robot. Cuando Baek-kyun modeló al robot después de Ji-ah, el equipo termina recluyéndola para tomar el lugar de AG3.</p>
       </div>
       <div class="info-block">
         <h3>Detalles de la Serie</h3>
@@ -540,7 +701,7 @@
 
   <footer class="footer">
     <div class="footer-logo">KDramaStream</div>
-    <p class="footer-text">Todos los Derechos Reservados por <strong> Julio Cesar </strong><br>Las imágenes y videos pertenecen a sus respectivos propietarios.</p>
+    <p class="footer-text">Todos los Derechos Reservados por <strong>7JC</strong><br>Las imágenes y videos pertenecen a sus respectivos propietarios.</p>
     <div class="footer-socials">
       <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -551,7 +712,6 @@
 
   <div class="toast-box" id="toastBox"></div>
 
-  <!-- MODAL REPRODUCTOR -->
   <div class="modal-bg" id="modalBg">
     <div class="modal-box">
       <div class="modal-top">
@@ -570,7 +730,6 @@
   </div>
 
   <script>
-    // ===== 32 EPISODIOS con autoplay=1 para que reproduzcan =====
     var eps = [
       { n:1,  url:'https://ok.ru/videoembed/1897423047217' },
       { n:2,  url:'https://ok.ru/videoembed/1897423243825' },
@@ -617,7 +776,6 @@
 
     var curEp = 0;
 
-    // ===== TRAILER FALLBACK =====
     var tVid = document.getElementById('trailerVideo');
     var tFb = document.getElementById('trailerFallback');
     tVid.addEventListener('loadeddata', function() { tFb.classList.add('hidden'); });
@@ -625,7 +783,6 @@
       if (isNaN(tVid.duration) || tVid.duration === 0) tVid.style.display = 'none';
     }, 3000);
 
-    // ===== REPARTO =====
     var castEl = document.getElementById('castScroll');
     for (var c = 0; c < castData.length; c++) {
       (function(actor) {
@@ -637,7 +794,6 @@
       })(castData[c]);
     }
 
-    // ===== FILTROS =====
     var filterEl = document.getElementById('epFilter');
     var ranges = ['Todos','1-6','7-14','15-22','23-32'];
     for (var f = 0; f < ranges.length; f++) {
@@ -650,7 +806,6 @@
       })(ranges[f]);
     }
 
-    // ===== EPISODIOS =====
     var gridEl = document.getElementById('epGrid');
 
     function renderEps(list) {
@@ -660,10 +815,7 @@
           var card = document.createElement('div');
           card.className = 'ep-card';
           card.innerHTML = '<div class="ep-thumb"><img src="https://picsum.photos/seed/nrobot'+ep.n+'/640/360.jpg" alt="Capítulo '+ep.n+'" loading="lazy" onerror="this.style.display=\'none\'"><div class="ep-overlay"><button class="ep-play"><i class="fas fa-play"></i></button></div><span class="ep-badge">EP '+String(ep.n).padStart(2,'0')+'</span></div><div class="ep-info"><div class="ep-row"><span class="ep-name">Capítulo '+ep.n+'</span><span class="ep-st">Disponible</span></div><div class="ep-sub">No Soy un Robot '+ep.n+'</div></div>';
-          card.addEventListener('click', function() {
-            curEp = ep.n - 1;
-            openModal(ep);
-          });
+          card.addEventListener('click', function() { curEp = ep.n - 1; openModal(ep); });
           card.addEventListener('mousemove', function(e) {
             var r = card.getBoundingClientRect();
             var x = (e.clientX - r.left) / r.width - 0.5;
@@ -687,29 +839,21 @@
       renderEps(eps.filter(function(ep) { return ep.n >= parseInt(p[0]) && ep.n <= parseInt(p[1]); }));
     }
 
-    // ===== MODAL - Función de reproducción corregida =====
     var mBg = document.getElementById('modalBg');
     var mIframe = document.getElementById('mIframe');
-    var mIframeBox = document.getElementById('mIframeBox');
     var mTitle = document.getElementById('mTitle');
     var mCounter = document.getElementById('mCounter');
     var mPrev = document.getElementById('mPrev');
     var mNext = document.getElementById('mNext');
 
     function buildPlayUrl(baseUrl) {
-      // Agregar autoplay para que ok.ru reproduzca automáticamente
-      if (baseUrl.indexOf('?') !== -1) {
-        return baseUrl + '&autoplay=1';
-      }
+      if (baseUrl.indexOf('?') !== -1) return baseUrl + '&autoplay=1';
       return baseUrl + '?autoplay=1';
     }
 
     function openModal(ep) {
       mTitle.textContent = 'Capítulo ' + ep.n + ' - No Soy un Robot';
-      // Construir URL con autoplay
-      var playUrl = buildPlayUrl(ep.url);
-      mIframe.src = playUrl;
-      // Configurar atributos allow para autoplay
+      mIframe.src = buildPlayUrl(ep.url);
       mIframe.setAttribute('allow', 'autoplay; encrypted-media; fullscreen; picture-in-picture');
       mIframe.setAttribute('allowfullscreen', 'true');
       mBg.classList.add('active');
@@ -719,7 +863,6 @@
 
     function closeModal() {
       mBg.classList.remove('active');
-      // Limpiar iframe para detener video
       mIframe.src = '';
       mIframe.removeAttribute('allow');
       document.body.style.overflow = '';
@@ -734,10 +877,8 @@
     function goEp(idx) {
       if (idx < 0 || idx >= eps.length) return;
       curEp = idx;
-      var ep = eps[idx];
-      mTitle.textContent = 'Capítulo ' + ep.n + ' - No Soy un Robot';
-      var playUrl = buildPlayUrl(ep.url);
-      mIframe.src = playUrl;
+      mTitle.textContent = 'Capítulo ' + eps[idx].n + ' - No Soy un Robot';
+      mIframe.src = buildPlayUrl(eps[idx].url);
       mIframe.setAttribute('allow', 'autoplay; encrypted-media; fullscreen; picture-in-picture');
       updNav();
     }
@@ -745,13 +886,7 @@
     document.getElementById('mClose').addEventListener('click', closeModal);
     mPrev.addEventListener('click', function() { goEp(curEp - 1); });
     mNext.addEventListener('click', function() { goEp(curEp + 1); });
-
-    // Cerrar al clic fuera PERO no si el clic fue dentro del iframe
-    mBg.addEventListener('click', function(e) {
-      if (e.target === mBg) closeModal();
-    });
-
-    // Teclado
+    mBg.addEventListener('click', function(e) { if (e.target === mBg) closeModal(); });
     document.addEventListener('keydown', function(e) {
       if (!mBg.classList.contains('active')) return;
       if (e.key === 'Escape') closeModal();
@@ -759,7 +894,6 @@
       if (e.key === 'ArrowRight') goEp(curEp + 1);
     });
 
-    // ===== TOAST =====
     function showToast(msg) {
       var box = document.getElementById('toastBox');
       var t = document.createElement('div');
@@ -769,7 +903,6 @@
       setTimeout(function() { t.classList.add('out'); setTimeout(function() { t.remove(); }, 300); }, 2500);
     }
 
-    // ===== NAVBAR =====
     var navbar = document.getElementById('navbar');
     window.addEventListener('scroll', function() { navbar.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
 
@@ -787,7 +920,6 @@
       }
     }, { passive: true });
 
-    // ===== MOBILE =====
     document.getElementById('navToggle').addEventListener('click', function() {
       document.getElementById('mobMenu').classList.add('open');
       document.getElementById('mobOverlay').classList.add('open');
@@ -803,7 +935,6 @@
     var ml = document.querySelectorAll('.mlink');
     for (var m = 0; m < ml.length; m++) ml[m].addEventListener('click', closeMob);
 
-    // ===== PARTÍCULAS =====
     var pc = document.getElementById('heroParticles');
     for (var p = 0; p < 25; p++) {
       var dot = document.createElement('div');
@@ -816,7 +947,6 @@
       pc.appendChild(dot);
     }
 
-    // ===== ANIMACIONES =====
     var animEls = document.querySelectorAll('.anim-in');
     var obs = new IntersectionObserver(function(entries) {
       for (var i = 0; i < entries.length; i++) {
@@ -825,14 +955,12 @@
     }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
     for (var a = 0; a < animEls.length; a++) obs.observe(animEls[a]);
 
-    // ===== CAST DRAG =====
     var drag = false, dx = 0, sl = 0;
     castEl.addEventListener('mousedown', function(e) { drag = true; castEl.style.cursor = 'grabbing'; dx = e.pageX - castEl.offsetLeft; sl = castEl.scrollLeft; });
     castEl.addEventListener('mouseleave', function() { drag = false; castEl.style.cursor = ''; });
     castEl.addEventListener('mouseup', function() { drag = false; castEl.style.cursor = ''; });
     castEl.addEventListener('mousemove', function(e) { if (!drag) return; e.preventDefault(); castEl.scrollLeft = sl - ((e.pageX - castEl.offsetLeft) - dx) * 1.5; });
 
-    // ===== REDUCED MOTION =====
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       var pts = document.querySelectorAll('.particle');
       for (var r = 0; r < pts.length; r++) pts[r].remove();
