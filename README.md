@@ -1,41 +1,67 @@
-Página web de streaming para la serie K-Drama "No Soy un Robot" (로봇이 아니야) con diseño inspirado en Netflix. Incluye los 32 episodios completos, información del reparto, sinopsis detallada y reproductor integrado.
+🎬 K-Drama “No Soy un Robot” — Streaming Web App
 
-Características
-Diseño Netflix — Interfaz oscura profesional con efectos de brillo, partículas y animaciones suaves
-32 Episodios — Todos los capítulos con reproductor embebido y navegación entre episodios
-Reparto Interactivo — Carrusel horizontal con drag scroll y efecto hover 3D
-Reproductor Modal — Sistema de reproducción con overlay inteligente para compatibilidad móvil
-Navegación por Teclado — Flechas ← → para cambiar capítulo, ESC para cerrar
-Filtros de Episodios — Filtra por rangos: 1-6, 7-14, 15-22, 23-32
-100% Responsive — Adaptado para desktop, tablet y móvil
-Toast Notifications — Feedback visual sin usar alert()
-Scroll Reveal — Animaciones de entrada al hacer scroll
-Menú Mobile — Panel lateral con overlay para navegación en pantallas pequeñas
+> Experiencia de streaming inspirada en Netflix para la serie coreana *“I’m Not a Robot”* (로봇이 아니야). 32 episodios, diseño oscuro, animaciones suaves y navegación intuitiva.
 
-| Tecnología | Uso |
-|---|---|
-| HTML5 | Estructura semántica |
-| CSS3 | Diseño responsive, animaciones, gradientes, glassmorphism |
-| JavaScript | Reproductor modal, filtros, navegación, scroll reveal |
-| Font Awesome | Iconos |
-| Google Fonts | Bebas Neue, Noto Sans KR |
-| ok.ru | Hosting de videos embebidos |
+🌐 [Ver sitio web](https://julio-73.github.io/kdrama-Iam-Not-Robot/)  
 
-Créditos
-Desarrollo: Julio Cesar Engineer Software 
-Serie: No Soy un Robot (tvN, 2017)
-Director: Jung Dae-yoon
-Guionista: Kim Sun-mi
+-----------------------------------------------------
+
+📖 Descripción
+
+Página web de streaming desarrollada con HTML5, CSS3 y JavaScript puro. Incluye:
+
+✅ 32 episodios completos con reproductor embebido  
+✅ Sinopsís, reparto y navegación entre capítulos  
+✅ Diseño responsive + efectos visuales (glassmorphism, scroll reveal, hover 3D)  
+✅ Filtros por rangos de episodios  
+✅ Menú mobile con overlay  
+✅ Navegación por teclado (← →, ESC)  
+✅ Toast notifications personalizadas
+
+-----------------------------------------------------
+
+🛠️ Tecnologías
+
+| Tecnología       | Uso                                      |
+|------------------|------------------------------------------|
+| HTML5            | Estructura semántica                     |
+| CSS3             | Animaciones, gradients, glassmorphism    |
+| JavaScript       | Reproductor, filtros, navegación         |
+| Font Awesome     | Iconos                                   |
+| Google Fonts     | Bebas Neue, Noto Sans KR                 |
+| ok.ru            | Hosting de videos                        |
+
+---------------------------------------------------------------
+
+👥 Créditos
+
+Desarrollo: Julio Cesar ! Full Stack Developer 
+📧 julioquispe.dev@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/julio-cesar-quispe-garrido/)
+
+Serie: I’m Not a Robot* (tvN, 2017)  
+Director: Jung Dae-yoon | Guionista: Kim Sun-mi  
 Reparto: Yoo Seung-ho, Chae Soo-bin, Park Se-wan, Um Ki-joon
 
-ontacto
-Correo : julioquispe.dev@gmail.com
-Linkedim: https://www.linkedin.com/in/julio-cesar-quispe-garrido/
+---------------------------------------------------------------
 
 
+## 📊 Lenguajes
 
+| Lenguaje     | %     |
+|--------------|-------|
+| HTML         | 93.4% |
+| CSS          | 5.4%  |
+| JavaScript   | 1.2%  |
 
+---
 
+## 📬 Contacto
 
+¿ Quieres desarrollar webs y Aplicaciones Modernas? Escríbeme:  
+📩 julioquispe.dev@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/julio-cesar-quispe-garrido/)
 
+---
 
+⭐ ¡Dale una estrella si te gustó!
